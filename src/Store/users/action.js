@@ -1,7 +1,7 @@
 import { USER_DELETED, USER_POST, USER_UPDATED } from "./type";
 const token = localStorage.getItem("key");
 
-const baseURL = "http://localhost:8080/users";
+const baseURL = "https://crud-backend-rqol.onrender.com/users";
 
 export const userUpdate = (form) => (dispatch) => {
   fetch(`${baseURL}/${form._id}`, {

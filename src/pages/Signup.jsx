@@ -13,7 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  const authBaseURL = "http://localhost:8080/auth";
+  const authBaseURL = "https://crud-backend-rqol.onrender.com/auth";
   const dispatch = useDispatch();
   const { loading } = useSelector((store) => store.authReducer);
   const nevigate = useNavigate();

@@ -64,7 +64,7 @@ const Home = () => {
   function getUser() {
     dispatch({ type: "LOADING_TRUE", payload: "" });
     fetch(
-      `http://localhost:8080/users?page=${page}&limit=5&sortBy=${sortBy}&sortOrder=${sort}&filterBy=${filterBy}&filterQuery=${filterQuery}&search=${search}`,
+      `https://crud-backend-rqol.onrender.com/users?page=${page}&limit=5&sortBy=${sortBy}&sortOrder=${sort}&filterBy=${filterBy}&filterQuery=${filterQuery}&search=${search}`,
       {
         method: "GET",
         headers: {

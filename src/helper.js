@@ -1,7 +1,7 @@
 const token = localStorage.getItem("key");
 
 export const getFilter = (setFilterData) => {
-  fetch("http://localhost:8080/users", {
+  fetch("https://crud-backend-rqol.onrender.com/users", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`, // notice the Bearer before your token
